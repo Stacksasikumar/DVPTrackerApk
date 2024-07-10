@@ -29,29 +29,25 @@ BackgroundColor="#791AE5"
         >
                 <StackLayout Spacing="20">
                     <StackLayout>
-                        <Editor
+                    <Entry
                     Margin="20,0,0,0"
-                    FontSize="10"
+                    FontSize="20"
                    PlaceholderColor="#791AE5"
                        Placeholder="User Name"
                     TextColor="#99A1B3" x:Name="username"  />
              
                     </StackLayout>
                     <StackLayout Spacing="20">
-                        <Editor
+                        <Entry
+                            IsPassword="True"
                     Margin="20,0,0,0"
-                    FontSize="10"
+                    FontSize="20"
                     Placeholder="Password"
                    PlaceholderColor="#791AE5"
                     TextColor="#99A1B3" x:Name="password" />
                        
                     </StackLayout>
-                    <Label
-                FontAttributes="None"
-                FontSize="10"
-                HorizontalOptions="EndAndExpand"
-                Text="Forget Password?"
-                TextColor="#99A1B3" />
+                   
                     <yummy:PancakeView
                 BackgroundColor="#791AE5"
                

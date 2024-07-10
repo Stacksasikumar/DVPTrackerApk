@@ -60,7 +60,7 @@ namespace DVPTracker.View
             catch (Exception ex)
             {
 
-                DisplayAlert("Error", ex.Message, "OK"); ;
+                DisplayAlert("Error", "Invalid username Or password!", "OK"); ;
             }
         }
         public async Task StoreUsername(string username)
