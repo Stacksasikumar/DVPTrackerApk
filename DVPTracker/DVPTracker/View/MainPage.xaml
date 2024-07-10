@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+Padding="0,40,0,0"
+BackgroundColor="#791AE5"           
+             x:Class="DVPTracker.View.MainPage">
+  
+        <StackLayout >
+        <StackLayout Spacing="5">
+            <Image HeightRequest="90" Source="teamlogo"/>
+        </StackLayout>
+        <StackLayout Margin="105,10,50,50" Spacing="20">
+          
+            <Label
+         FontAttributes="Bold"
+         FontSize="28"
+         HorizontalOptions="StartAndExpand"
+         Text="DVP Tracker"
+         TextColor="White"
+         WidthRequest="200" />
+            </StackLayout>
+            <yummy:PancakeView
+        Margin="0,0,0,0"
+        Padding="30,0,30,30"
+        BackgroundColor="White"
+        CornerRadius="40,40,0,0"
+        >
+                <StackLayout Spacing="20">
+                    <StackLayout>
+                        <Editor
+                    Margin="20,0,0,0"
+                    FontSize="10"
+                   PlaceholderColor="#791AE5"
+                       Placeholder="User Name"
+                    TextColor="#99A1B3" />
+             
+                    </StackLayout>
+                    <StackLayout Spacing="20">
+                        <Editor
+                    Margin="20,0,0,0"
+                    FontSize="10"
+                    Placeholder="Password"
+                   PlaceholderColor="#791AE5"
+                    TextColor="#99A1B3" />
+                       
+                    </StackLayout>
+                    <Label
+                FontAttributes="None"
+                FontSize="10"
+                HorizontalOptions="EndAndExpand"
+                Text="Forget Password?"
+                TextColor="#99A1B3" />
+                    <yummy:PancakeView
+                BackgroundColor="#791AE5"
+               
+                CornerRadius="25"
+              
+                HeightRequest="50"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="150">
+                        <Label
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Login"
+                    TextColor="White"
+                    VerticalOptions="CenterAndExpand" >
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="LoginClick" ></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </yummy:PancakeView>
+                  
+                </StackLayout>
+            </yummy:PancakeView>
+        </StackLayout>
+   
+</ContentPage>

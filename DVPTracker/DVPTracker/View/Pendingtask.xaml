@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:DVPTracker.ViewModels"
+             Padding="0,40,0,0"
+            
+             x:Class="DVPTracker.View.Pendingtask">
+
+
+   
+
+    <ContentPage.BindingContext>
+        <local:JobTasksViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="10">
+        <Label Text="Job Tasks" StyleClass="labelTitle" HorizontalOptions="Center" />
+        <ListView ItemsSource="{Binding JobTasks}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" StyleClass="taskItem">
+                            <Label Text="{Binding Name}" StyleClass="taskName" />
+                            <Label Text="{Binding Description}" StyleClass="taskDescription" />
+                            
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

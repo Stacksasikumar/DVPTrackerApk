@@ -1,0 +1,32 @@
+﻿/* Define the styles for the task list */
+.labelTitle {
+    font-size: 24;
+    font-weight: bold;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.taskItem {
+    background-color: #ECF0F1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.taskName {
+    font-size: 18;
+    font-weight: bold;
+    color: #2980B9;
+}
+
+.taskDescription {
+    font-size: 14;
+    color: #7F8C8D;
+    margin-top: 5px;
+}
+
+.taskDate {
+    font-size: 12;
+    color: #95A5A6;
+    margin-top: 5px;
+}
