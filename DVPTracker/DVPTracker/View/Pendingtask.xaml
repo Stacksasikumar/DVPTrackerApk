@@ -11,22 +11,23 @@
     <ContentPage.BindingContext>
         <local:JobTasksViewModel />
     </ContentPage.BindingContext>
-
-    <StackLayout Padding="10">
-        <Label Text="Job Tasks" StyleClass="labelTitle" HorizontalOptions="Center" />
-        <ListView ItemsSource="{Binding JobTasks}">
+    <StackLayout>
+        <ListView ItemsSource="{Binding Tasks}" HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Vertical" StyleClass="taskItem">
-                            <Label Text="{Binding Name}" StyleClass="taskName" />
-                            <Label Text="{Binding Description}" StyleClass="taskDescription" />
-                            
+                        <StackLayout Padding="10">
+                         <Label Text="{Binding Title}" VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
+                            <Label Text="{Binding Description}" FontSize="Small" FontAttributes="Italic" />
+                           
+                            <CheckBox IsChecked="{Binding IsCompleted}" VerticalOptions="Center" />
+
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
+   
 
 </ContentPage>

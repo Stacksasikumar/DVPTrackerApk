@@ -1,32 +1,33 @@
-﻿/* Define the styles for the task list */
+﻿/* Define the styles for the chat interface */
 .labelTitle {
-    font-size: 24;
+    font-size: 24em;
     font-weight: bold;
     color: #2C3E50;
     margin-bottom: 20px;
 }
 
-.taskItem {
+.messageItem {
     background-color: #ECF0F1;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
-.taskName {
-    font-size: 18;
+.messageSender {
+    font-size: 16em;
     font-weight: bold;
     color: #2980B9;
 }
 
-.taskDescription {
-    font-size: 14;
+.messageContent {
+    font-size: 14em;
     color: #7F8C8D;
     margin-top: 5px;
 }
 
-.taskDate {
-    font-size: 12;
+.messageTimestamp {
+    font-size: 12em;
     color: #95A5A6;
     margin-top: 5px;
+    text-align: right;
 }

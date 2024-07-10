@@ -34,7 +34,7 @@ BackgroundColor="#791AE5"
                     FontSize="10"
                    PlaceholderColor="#791AE5"
                        Placeholder="User Name"
-                    TextColor="#99A1B3" />
+                    TextColor="#99A1B3" x:Name="username"  />
              
                     </StackLayout>
                     <StackLayout Spacing="20">
@@ -43,7 +43,7 @@ BackgroundColor="#791AE5"
                     FontSize="10"
                     Placeholder="Password"
                    PlaceholderColor="#791AE5"
-                    TextColor="#99A1B3" />
+                    TextColor="#99A1B3" x:Name="password" />
                        
                     </StackLayout>
                     <Label

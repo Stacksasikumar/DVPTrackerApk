@@ -20,6 +20,7 @@ namespace DVPTracker.View
 
         void TeamchatClick(object sender, EventArgs e)
         {
+            
             Navigation.PushAsync(new Teamchat());
         }
     }

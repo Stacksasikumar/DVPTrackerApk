@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text;
+using Xamarin.Forms;
 
 namespace DVPTracker.ViewModel
 {
@@ -15,9 +16,10 @@ namespace DVPTracker.ViewModel
         public ObservableCollection<Chats> AllTeamChats { get; set; } = new ObservableCollection<Chats>(); 
         public event PropertyChangedEventHandler PropertyChanged;
         FirebaseClient firebaseClient = new FirebaseClient("https://strs-4c156-default-rtdb.firebaseio.com/");
+        
         public TeamChatViewModel()
         {
-             
+            
             SubscribeToFirebase();
 
         }
@@ -28,6 +30,7 @@ namespace DVPTracker.ViewModel
             {
                 SenderName = team.SenderName,
                 Message = team.Message,
+                Timestamp = team.Timestamp
             });
         }
         public void SubscribeToFirebase()
@@ -50,6 +53,7 @@ namespace DVPTracker.ViewModel
     {
         public string SenderName { get; set; }
         public string Message { get; set; }
+        public DateTime Timestamp { get; set; }
 
     }
 }
